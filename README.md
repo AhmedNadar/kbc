@@ -14,11 +14,11 @@
 	⁃ Kids can create a profile with Name, picture,
 
 ## User Stories
-***As a blank, I want to be able to blank, so that blank***
-- As a kid, I want to be able to list my book, so that I can share what I’m reading with others.
-- As a kid, I want to be able to write my thoughts to notes on each book I list, so I can keep track of my thoughts of each book on it’s page.
-- As a kid, I want to be write posts/articles -such as a blog-, so that I can express my thought besides my nots on my books.
-- As a kid, I want visitors to be bale to leave comments/reviews on my books, so that I can communicate with my reviewers.
+  ***As a blank, I want to be able to blank, so that blank***
+  - As a kid, I want to be able to list my book, so that I can share what I’m reading with others.
+  - As a kid, I want to be able to write my thoughts to notes on each book I list, so I can keep track of my thoughts of each book on it’s page.
+  - As a kid, I want to be write posts/articles -such as a blog-, so that I can express my thought besides my nots on my books.
+  - As a kid, I want visitors to be bale to leave comments/reviews on my books, so that I can communicate with my reviewers.
 
 ## Pages we need to build
 
@@ -27,3 +27,7 @@
   3.  Book#new   - create a new book
   4.  Book#show  - show details for each book
   5.  Kid’s Blog - write notes and thought separate from book review or notes.
+
+## Modeling KBC Data
+  - Book - title, description, author Name, notes, (link, book image, rating)
+  - User - first name, last name, email, image
