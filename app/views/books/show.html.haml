@@ -1,0 +1,18 @@
+%p= @book.created_at.strftime("%A, %B %d")
+%br/
+
+%h4 Book Name: #{@book.name}
+%br/
+
+%h5 Book Author: #{@book.author}
+%br/
+
+%p Description: #{@book.description}
+%br/
+
+%p Notes: #{@book.notes}
+%br/
+
+%hr/
+=link_to "Edit", edit_book_path(@book)
+=link_to "Delete", book_path(@book), method: :delete, data: {confirm: "Are you sure?"}

@@ -1,0 +1,30 @@
+=render 'page_title'
+
+= form_for @book do |f|
+  - if @book.errors.any?
+    %h2 #{pluralize(@book.errors.count, "error") } prevented this book from saving:
+    %ul
+      - @book.errors.full_messages.each do |msg|
+        %li= msg
+
+  = f.label :name
+  = f.text_field :name, required: true
+  %br/
+  %br/
+
+  = f.label :author
+  = f.text_field :author, required: true
+  %br/
+  %br/
+
+  = f.label :description
+  = f.text_area :description, required: true
+  %br/
+  %br/
+
+  = f.label :notes
+  = f.text_area :notes, required: true
+  %br/
+  %br/
+
+  = f.submit
