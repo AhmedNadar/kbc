@@ -3,3 +3,4 @@
 - @books.each do |book|
   %p= book.created_at.strftime("%A, %B %d")
   %h2= link_to book.name, book
+  = image_tag book.thumbnail.url(:thumb)

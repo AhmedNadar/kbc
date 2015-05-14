@@ -1,6 +1,6 @@
 =render 'page_title'
 
-= form_for @book do |f|
+= form_for @book, html: {multipart: true} do |f|
   - if @book.errors.any?
     %h2 #{pluralize(@book.errors.count, "error") } prevented this book from saving:
     %ul
@@ -24,6 +24,11 @@
 
   = f.label :notes
   = f.text_area :notes, required: true
+  %br/
+  %br/
+
+  = f.label :thumbnail
+  = f.file_field :thumbnail
   %br/
   %br/
 
